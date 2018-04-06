@@ -5,7 +5,7 @@ all: $(TARGS) hash.md5
 	md5sum -c hash.md5
 
 ocean_hgrid.nc ocean_mask.nc:
-	wget ftp://ftp.gfdl.noaa.gov/home/aja/OM4_05_grid.unpacked/$@
+	wget ftp://ftp.gfdl.noaa.gov/home/aja/OM4_025_grid.unpacked/$@
 	md5sum -c $@.md5
 PHC2_salx.2004_08_03.nc:
 	wget http://data1.gfdl.noaa.gov/~nnz/mom4/COREv1/support_data/PHC2_salx.2004_08_03.nc
