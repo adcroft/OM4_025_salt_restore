@@ -6,7 +6,7 @@ addons:
   apt:
     packages:
     - nco
-
+    - netcdf-bin
 
 python:
   - "3.6"
