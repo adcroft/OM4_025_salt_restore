@@ -20,7 +20,7 @@ sos_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-4-0_gr_195501-201212-clim.co
 	ncatted -h -O -a calendar,time,o,c,'julian' $@
 	ncatted -h -O -a modulo,time,c,c,' ' $@
 	ncatted -h -O -a calendar_type,time,c,c,'julian' $@
-	md5sum -c $@.md5
+#	md5sum -c $@.md5
 PHC2_salx.2004_08_03.corrected.nc: PHC2_salx.2004_08_03.nc
 	ncap2 -h -O -s 'time(:)={15,45,76,106,136,168,198,228,258,288,320,350}' $< $@
 	ncatted -h -O -a units,time,o,c,'days since 1900-01-01 00:00:00' $@

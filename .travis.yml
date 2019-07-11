@@ -18,4 +18,10 @@ install:
 
 script:
   - make salt_restore_PHC2.1440x1080.v20180405.nc
-  - md5sum -c --ignore-missing hash.md5
+  - make
+  - ncdump -h sos_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-4-0_gr_195501-201212-clim.corrected.nc
+  - ncdump -k sos_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-4-0_gr_195501-201212-clim.corrected.nc
+  - ncks --version
+
+
+#  - md5sum -c --ignore-missing hash.md5
