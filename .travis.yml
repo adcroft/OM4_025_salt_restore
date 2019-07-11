@@ -17,5 +17,4 @@ install:
   - pip freeze
 
 script:
-  - make salt_restore_PHC2.1440x1080.v20180405.nc
-  - md5sum -c --ignore-missing hash.md5
+  - make
